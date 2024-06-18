@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go-Daddy</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    
+    <header>
+        <h2 class="logo">Go-Daddy</h2>
+        <nav class="navigateur">
+            <a href="index.html"> Home</a>
+            <a href="page-recherche-etu.html">Recherche</a>
+            <Button class="btnLogin-popup">Login</Button>
+        </nav>
+    </header>
+
+    <div class="space1"></div>
+
+    
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+
+        <div class="form-box Login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                   <span class="icon"><ion-icon name="person-outline"></ion-icon></span> 
+                   <input name="username" id="UsernameInput" type="text" required/>
+                   <label for="username">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span> 
+                    <input name="password" id="PasswordInput" type="text" required/>
+                    <label for="password">Password</label>
+                 </div>
+                 <div class="remenber-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#"> Mot de passe oublié ?</a>
+                 </div>
+                 <button type="submit" class="btn"onclick="login(event)"> Login</button>
+                 <div class="login-register">
+                    <p> Pas de compte ?<a href="#" class="register-link"> Sign-in</a></p>
+                 </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Sign-in</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span> 
+                    <input name="username" id="signupUsernameInput" type="text" required/>
+                    <label for="username">Username</label>
+                 </div>
+                <div class="input-box">
+                   <span class="icon"><ion-icon name="mail-outline"></ion-icon></span> 
+                   <input name="email" id="signUpEmailInput" type="text" required/>
+                   <label for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span> 
+                    <input name="password" id="signUpPasswordInput" type="text" required/>
+                    <label for="password">Password</label>
+                 </div>
+                 <div class="remenber-forgot">
+                    <label><input name = "type" id="signUptypeInput" type="checkbox"> Créer un compte étudiant</label>
+                 </div>
+                 <div class="remenber-forgot">
+                    <label><input name = "type" id="signUptypeInput" type="checkbox"> Créer un compte professeur</label>
+                 </div>
+                 <div class="remenber-forgot">
+                    <label><input name = "type" id="signUptypeInput" type="checkbox"> Créer un compte recruteur</label>
+                 </div>
+                 <div class="remenber-forgot">
+                    <label><input name = "type" id="signUptypeInput" type="checkbox"> Accepter de vendre votre âme</label>
+                 </div>
+                 <input type="submit" class="btn" onclick="signup(event)"> Register</input>
+                 <div class="login-register">
+                    <p> Tu as déjà un compte ?<a href="#" class="login-link"> Login</a></p>
+                 </div>
+            </form>
+        </div>
+    </div>
+
+
+    <section class="parallax">
+      <img src="assets/image/tree-left.png" id="tree-left">
+      <img src="assets/image/tree-right.png" id="tree-right">
+      <img src="assets/image/gate-left.png" id="gate-left">
+      <img src="assets/image/gate-right.png" id="gate-right">
+      <img src="assets/image/grass.png" id="grass">
+    </section>
+
+    <div class="space2"></div>
+
+    <footer>
+      <div class="sec">
+      <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">LEARN MORE</h2>
+      <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" >
+         La Sol Tech Innovations est la référence en termes d’agence pour l’emploi
+         informatique européen, basée à Dublin.
+         Sa vision, très novatrice sur la formation en alternance et l’enjeu des
+         compétences de demain, l’a poussée à créer, à Grenoble, la Sol Tech
+         Innovations Ed.
+         STI-Ed est dédiée à la mise en relation des maîtres d’apprentissages et des
+         recruteurs de 1er emploi avec les apprentis, en informatique. Elle souhaite
+         mettre en place une plate-forme numérique et sécurisée révolutionnaire,
+         basée sur les preuves d’acquisitions de compétences IT des étudiants,
+         validées par leurs enseignants et à destination de maîtres d’apprentissages
+         et de recruteurs en fin de cursus.
+         Afin de mener à bien ce projet, la STI-Ed a sélectionné 2 écoles
+         informatiques en parallèle : ExSIE P et ESIEE-IT.
+         Elle aussi choisi de confier ce projet aux plus jeunes apprenants afin de
+         suivre leurs évolutions futures jusqu’au niveau d’expertise IT, en termes de
+         compétences et d’évaluation des profils.
+         C’est aussi pour la SolTech Innovations Ed, un moyen de participer à la
+         formation de ces jeunes en les mettant à la fois en place de développeurs de
+         solutions numériques sécurisées et en cibles utilisatrices.
+         Les étudiants devront développer leur capacité de « learning by doing » afin
+         de réussir.<br><br>Ce site web a été réalisé par Yohan Cana, Raphaël Bigord, Rayan Nabi, Mathis Philipe et Karlotta Martin.
+         Avec l'aide de Dylan Guichard et de Tholmar.
+         
+
+      </p>
+      </div>
+   </footer>
+
+    
+<script src="assets/js/script.js"></script>
+<script src="assets/js/login.js"></script>
+<script src="https://kit.fontawesome.com/d2db45fae2.js" crossorigin="anonymous"></script>
+<script src="assets/js/cookieManager.js"></script>
+<script src="assets/js/login.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
+    
+</body>
+</html>

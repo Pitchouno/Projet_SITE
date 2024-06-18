@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Dady Check - Recherche de Profils</title>
+    <!-- Lien vers le fichier CSS pour le style de la page -->
+    <link rel="stylesheet" href="assets/css/styles-page-recherche.css">
+</head>
+<body>
+     <!-- En-tête de la page -->
+    <header>
+        <h2 class="logo">Go-Dady Check</h2>
+        <nav class="navigateur">
+            <!-- Liens de navigation -->
+            <a href="index.html">Home</a>
+            <a href="page-recherche-etu.html">Recherche</a>
+            <button class="btnProfil">Profil</button>
+        </nav>
+    </header>
+    <!-- Formulaire de recherche -->
+    <form id="searchForm">
+        <div>
+            <input type="search" id="maRecherche" name="q" placeholder="Rechercher des profils...">
+            <button type="button" onclick="searchProfiles()"><ion-icon name="search-outline"></ion-icon></button>
+        </div>
+    </form>
+    <!-- Contenu principal où les profils seront affichés -->
+    <main>
+        <div id="profilesContainer">
+            <!-- Les profils seront affichés ici -->
+        </div>
+    </main>
+     <!-- Import des icônes ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Lien vers le fichier JavaScript pour la recherche de profils -->
+    <script src="assets/js/recherche-etu.js"></script>
+</body>
+</html>
